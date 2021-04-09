@@ -12,24 +12,20 @@ This application allows the user to write and delete notes left on a server
 * [Usage](#Usage)
 * [License](#License)
 * [Contributing](#Contributing)
-* [Tests](#Tests)
 * [Questions](#Questions)
 
 ## Installation
-Head over to the page "    dataBase.forEach((note, index) => {
+Head over to this page!  [https://evening-sands-20074.herokuapp.com/notes](https://evening-sands-20074.herokuapp.com/notes)
 
 ## Usage
- Write in a a title, and then some notes and click the save button on the upper right.  You can also use the new note button next to it to start a fresh note at any time.  Lastly, all past saved notes will be on the left panel of the screen.  Each one has a delete button to remove the note.
+Write in a a title, and then some notes and click the save button on the upper right.  You can also use the new note button next to it to start a fresh note at any time.  Lastly, all past saved notes will be on the left panel of the screen.  Each one has a delete button to remove the note.
 
 ## License
 Mozzila Public License 2.0
 Please review [https://opensource.org/licenses/MPL-2.0](https://opensource.org/licenses/MPL-2.0) to understand the license.
 
 ## Contributing
-Adam natrop was a hero in helping me debug and fix errors
-
-## Tests
-
+Adam Natrop was a hero in helping me debug and fix errors
 
 ## Questions
 Come checkout my Github!
@@ -38,3 +34,6 @@ Come checkout my Github!
 
 And if you have any questions you can e-mail me at:
 [steven.vancourt.coding@gmail.com](steven.vancourt.coding@gmail.com)
+
+
+![image](https://user-images.githubusercontent.com/77998885/114124333-d67fbf00-98b9-11eb-9588-6190a14b57e5.png)
