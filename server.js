@@ -27,23 +27,31 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-    let number = 1;
-    dataBase.forEach((note, index) => {
-      note.id = number;
-      number++;
-      return dataBase;
-    });
-
-    console.log(dataBase)
     const userNotes = req.body;
     dataBase.push(userNotes);
-    res.json(userNotes);
-    
+    res.json(userNotes);   
+
+    dataBase.forEach((note, index) => {
+        note.id = index;
+        return dataBase;
+      });
+      console.log(dataBase)
 
     fs.writeFile('db/db.json', JSON.stringify(dataBase), (err,data) => {
         if(err) throw err; 
     });
 });
+
+app.delete('/api/notes/:id', (req,res) => {
+    dataBase = dataBase.filter( note => note.id != req.params.id)
+
+    fs.writeFile('db/db.json', JSON.stringify(dataBase), (err,data) => {
+        if(err) throw err; 
+    });
+
+    res.sendFile(path.join(__dirname, 'db/db.json'))
+});
+
 
 // Listener
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
